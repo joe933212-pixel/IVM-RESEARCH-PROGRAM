@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+title: "Institutional Virtual Machine Research Programme"
+message: "If you use this repository in academic or technical work, please cite the research programme."
+type: software
+authors:
+  - family-names: Kagoro
+    given-names: Joel
+    affiliation: "Independent Researcher, Uganda"
+version: "0.1.0"
+date-released: "2026-08-12"
+repository-code: "REPLACE_WITH_GITHUB_REPOSITORY_URL"
+license: "TBD"
