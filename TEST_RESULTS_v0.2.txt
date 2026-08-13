@@ -1,0 +1,15 @@
+
+test_clean_execution_commits (test_fault_injection.FaultInjectionTests.test_clean_execution_commits) ... ok
+test_execution_material_is_transportable (test_fault_injection.FaultInjectionTests.test_execution_material_is_transportable) ... ok
+test_precommit_authority_failure_preserves_state (test_fault_injection.FaultInjectionTests.test_precommit_authority_failure_preserves_state) ... ok
+test_replay_is_independent_of_first_runtime (test_fault_injection.FaultInjectionTests.test_replay_is_independent_of_first_runtime) ... ok
+test_authority_failure_preserves_state (test_runtime.RuntimeTests.test_authority_failure_preserves_state) ... ok
+test_duplicate (test_runtime.RuntimeTests.test_duplicate) ... ok
+test_replay (test_runtime.RuntimeTests.test_replay) ... ok
+test_rule_failure_preserves_state (test_runtime.RuntimeTests.test_rule_failure_preserves_state) ... ok
+test_success (test_runtime.RuntimeTests.test_success) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.001s
+
+OK

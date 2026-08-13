@@ -1,0 +1,9 @@
+Experiment 004A — Actual Process Death and Recovery
+
+23 tests run: 23 passed.
+
+Result: PASS.
+
+The process-death worker was executed as a separate OS process and deliberately terminated with non-zero exit codes after STATE_COMMITTED and HISTORY_ATTACHED. A fresh process successfully recovered the durable journal, preserved the exact candidate state and transaction phase, and did not re-execute the transition.
+
+Scope limitation: this does not prove filesystem power-loss durability, distributed atomicity, concurrent recovery, replication, Byzantine tolerance, or corruption recovery. Those require separate experiments.

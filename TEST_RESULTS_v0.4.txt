@@ -1,0 +1,25 @@
+test_clean_execution_commits (test_fault_injection.FaultInjectionTests.test_clean_execution_commits) ... ok
+test_execution_material_is_transportable (test_fault_injection.FaultInjectionTests.test_execution_material_is_transportable) ... ok
+test_precommit_authority_failure_preserves_state (test_fault_injection.FaultInjectionTests.test_precommit_authority_failure_preserves_state) ... ok
+test_replay_is_independent_of_first_runtime (test_fault_injection.FaultInjectionTests.test_replay_is_independent_of_first_runtime) ... ok
+test_commit_before_fault_has_a_visible_state_transition (test_fault_matrix.CanonicalFaultMatrixTests.test_commit_before_fault_has_a_visible_state_transition) ... ok
+test_completion_fault_preserves_history (test_fault_matrix.CanonicalFaultMatrixTests.test_completion_fault_preserves_history) ... ok
+test_fault_is_observed_at_every_boundary (test_fault_matrix.CanonicalFaultMatrixTests.test_fault_is_observed_at_every_boundary) ... ok
+test_history_boundary_exposes_current_atomicity_gap (test_fault_matrix.CanonicalFaultMatrixTests.test_history_boundary_exposes_current_atomicity_gap) ... ok
+test_post_history_fault_preserves_history (test_fault_matrix.CanonicalFaultMatrixTests.test_post_history_fault_preserves_history) ... ok
+test_pre_commit_faults_cannot_create_authoritative_state (test_fault_matrix.CanonicalFaultMatrixTests.test_pre_commit_faults_cannot_create_authoritative_state) ... ok
+test_authority_failure_preserves_state (test_runtime.RuntimeTests.test_authority_failure_preserves_state) ... ok
+test_duplicate (test_runtime.RuntimeTests.test_duplicate) ... ok
+test_replay (test_runtime.RuntimeTests.test_replay) ... ok
+test_rule_failure_preserves_state (test_runtime.RuntimeTests.test_rule_failure_preserves_state) ... ok
+test_success (test_runtime.RuntimeTests.test_success) ... ok
+test_crash_after_state_commit_is_recoverable_by_new_runtime (test_transactional_commit.TransactionalCommitTests.test_crash_after_state_commit_is_recoverable_by_new_runtime) ... ok
+test_prepare_persists_candidate_without_authoritative_commit (test_transactional_commit.TransactionalCommitTests.test_prepare_persists_candidate_without_authoritative_commit) ... ok
+test_recovery_after_history_attachment_finalizes (test_transactional_commit.TransactionalCommitTests.test_recovery_after_history_attachment_finalizes) ... ok
+test_recovery_does_not_recompute_a_different_candidate (test_transactional_commit.TransactionalCommitTests.test_recovery_does_not_recompute_a_different_candidate) ... ok
+test_state_commit_without_history_cannot_finalize (test_transactional_commit.TransactionalCommitTests.test_state_commit_without_history_cannot_finalize) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 0.005s
+
+OK

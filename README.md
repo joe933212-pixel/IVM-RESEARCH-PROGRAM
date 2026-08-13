@@ -1,13 +1,22 @@
-# Specifications
+# IVM Reference Runtime v0.1
 
-This directory preserves source specification documents used by the research programme.
+A minimal executable research prototype for the Institutional Virtual Machine (IVM) and Coordination Instruction Set Architecture (CISA).
 
-CRS: Coordination Requirements Specification.
+Canonical execution sequence:
 
-CISA: Coordination Instruction Set Architecture.
+RECEIVE_EVENT -> LOAD_STATE -> VERIFY_AUTHORITY -> EVALUATE_RULES -> EXECUTE_TRANSITION -> COMMIT_STATE -> RECORD_HISTORY -> COMPLETE_EXECUTION
 
-CEE: Coordination Execution Engine.
+This prototype deliberately excludes networking, databases, external identity providers and distributed deployment. It exists to test the core execution semantics before those concerns are added.
 
-IVM: Institutional Virtual Machine.
+## Run
 
-Original DOCX files are retained. Where available, machine-extracted Markdown is provided for easier repository inspection; the original DOCX remains the authoritative source document for wording and formatting.
+Python 3.10+
+
+```bash
+python -m unittest discover -s tests -v
+python examples/run_license_demo.py
+```
+
+## Research target
+
+The central hypothesis being tested is that identical explicit institutional execution material can produce identical authoritative state and independently replayable history.

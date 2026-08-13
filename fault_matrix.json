@@ -1,0 +1,82 @@
+[
+  {
+    "instruction": "RECEIVE_EVENT",
+    "timing": "before",
+    "expected_research_status": "pre_commit_safe_boundary"
+  },
+  {
+    "instruction": "RECEIVE_EVENT",
+    "timing": "after",
+    "expected_research_status": "pre_commit_safe_boundary"
+  },
+  {
+    "instruction": "LOAD_STATE",
+    "timing": "before",
+    "expected_research_status": "pre_commit_safe_boundary"
+  },
+  {
+    "instruction": "LOAD_STATE",
+    "timing": "after",
+    "expected_research_status": "pre_commit_safe_boundary"
+  },
+  {
+    "instruction": "VERIFY_AUTHORITY",
+    "timing": "before",
+    "expected_research_status": "pre_commit_safe_boundary"
+  },
+  {
+    "instruction": "VERIFY_AUTHORITY",
+    "timing": "after",
+    "expected_research_status": "pre_commit_safe_boundary"
+  },
+  {
+    "instruction": "EVALUATE_RULES",
+    "timing": "before",
+    "expected_research_status": "pre_commit_safe_boundary"
+  },
+  {
+    "instruction": "EVALUATE_RULES",
+    "timing": "after",
+    "expected_research_status": "pre_commit_safe_boundary"
+  },
+  {
+    "instruction": "EXECUTE_TRANSITION",
+    "timing": "before",
+    "expected_research_status": "pre_commit_safe_boundary"
+  },
+  {
+    "instruction": "EXECUTE_TRANSITION",
+    "timing": "after",
+    "expected_research_status": "pre_commit_safe_boundary"
+  },
+  {
+    "instruction": "COMMIT_STATE",
+    "timing": "before",
+    "expected_research_status": "commit_boundary_requires_durability_design"
+  },
+  {
+    "instruction": "COMMIT_STATE",
+    "timing": "after",
+    "expected_research_status": "commit_boundary_requires_durability_design"
+  },
+  {
+    "instruction": "RECORD_HISTORY",
+    "timing": "before",
+    "expected_research_status": "commit_boundary_requires_durability_design"
+  },
+  {
+    "instruction": "RECORD_HISTORY",
+    "timing": "after",
+    "expected_research_status": "commit_boundary_requires_durability_design"
+  },
+  {
+    "instruction": "COMPLETE_EXECUTION",
+    "timing": "before",
+    "expected_research_status": "commit_boundary_requires_durability_design"
+  },
+  {
+    "instruction": "COMPLETE_EXECUTION",
+    "timing": "after",
+    "expected_research_status": "commit_boundary_requires_durability_design"
+  }
+]

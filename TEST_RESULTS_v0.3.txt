@@ -1,0 +1,28 @@
+
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 772, in warm_spreadsheet_runtime
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/connection.py", line 37, in get_or_create_client
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/daemon.py", line 124, in start_daemon
+TimeoutError: Timed out waiting for artifact tool daemon socket. Set ARTIFACT_TOOL_RPC_DAEMON_STARTUP_TIMEOUT_S=<seconds> to increase the limit.
+test_clean_execution_commits (test_fault_injection.FaultInjectionTests.test_clean_execution_commits) ... ok
+test_execution_material_is_transportable (test_fault_injection.FaultInjectionTests.test_execution_material_is_transportable) ... ok
+test_precommit_authority_failure_preserves_state (test_fault_injection.FaultInjectionTests.test_precommit_authority_failure_preserves_state) ... ok
+test_replay_is_independent_of_first_runtime (test_fault_injection.FaultInjectionTests.test_replay_is_independent_of_first_runtime) ... ok
+test_commit_before_fault_has_a_visible_state_transition (test_fault_matrix.CanonicalFaultMatrixTests.test_commit_before_fault_has_a_visible_state_transition) ... ok
+test_completion_fault_preserves_history (test_fault_matrix.CanonicalFaultMatrixTests.test_completion_fault_preserves_history) ... ok
+test_fault_is_observed_at_every_boundary (test_fault_matrix.CanonicalFaultMatrixTests.test_fault_is_observed_at_every_boundary) ... ok
+test_history_boundary_exposes_current_atomicity_gap (test_fault_matrix.CanonicalFaultMatrixTests.test_history_boundary_exposes_current_atomicity_gap) ... ok
+test_post_history_fault_preserves_history (test_fault_matrix.CanonicalFaultMatrixTests.test_post_history_fault_preserves_history) ... ok
+test_pre_commit_faults_cannot_create_authoritative_state (test_fault_matrix.CanonicalFaultMatrixTests.test_pre_commit_faults_cannot_create_authoritative_state) ... ok
+test_authority_failure_preserves_state (test_runtime.RuntimeTests.test_authority_failure_preserves_state) ... ok
+test_duplicate (test_runtime.RuntimeTests.test_duplicate) ... ok
+test_replay (test_runtime.RuntimeTests.test_replay) ... ok
+test_rule_failure_preserves_state (test_runtime.RuntimeTests.test_rule_failure_preserves_state) ... ok
+test_success (test_runtime.RuntimeTests.test_success) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.003s
+
+OK
